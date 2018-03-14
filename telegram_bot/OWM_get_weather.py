@@ -13,9 +13,6 @@ def get_weather(city_name='Tokii'):
         res = response['message']
     return res
 
-    #price = response['ticker']['last']
-    # return str(price) + ' usd' 
-
 
 def main():
     print(get_weather())
