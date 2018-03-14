@@ -40,9 +40,6 @@ def send_message(chat_id, text='Wait a second, please...'):
 
 
 def main():
-    # d = get_updates()
-    # with open('updates.json', 'w', encoding='utf-8') as f:
-    #     json.dump(d, f, indent=2, ensure_ascii=False)
     while True:
         answer = get_message()
         if answer != None:
