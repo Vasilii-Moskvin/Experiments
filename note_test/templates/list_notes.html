@@ -1,0 +1,36 @@
+{% for note in notes %}
+    <div class="note">
+        <div class="about_note">
+            <a href="{% url 'public_note_view' note.unique_id %}"></a>
+            <h2>{{note.header_note}}</h2>
+            <p>{{note.dt}}</p>
+            <p>{{note.category.name}}
+                {% if note.favorites %}
+                    Избранная
+                {% endif %}
+            </p>
+        </div>
+        <div class="change_note">
+            <form method="post" action="{% url 'public_note_delete' note.unique_id %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-default">Delete note</button>
+            </form>
+        </div>
+    </div>
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if notes.has_previous %}
+            <a href="?page={{ notes.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ notes.number }} of {{ notes.paginator.num_pages }}.
+        </span>
+
+        {% if notes.has_next %}
+            <a href="?page={{ notes.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>

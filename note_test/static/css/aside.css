@@ -1,0 +1,58 @@
+.menu {
+	background-color: #99CCFF;
+	height: 400px;
+	overflow: hidden;
+}
+
+.menu > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu > ul > li{
+	text-align: center;
+}
+
+.menu > ul > li > a {
+	text-decoration: none;
+	line-height: 37px;
+	display: block;
+	width: 200px;
+	height: 30px;
+	background-color: #99CCFF;
+	font-family: Roboto;
+	color:  #000000;
+	font-size: 14px;/* Приближение из-за подстановки шрифтов */
+	font-weight: 900;
+	/*line-height: 36px;/* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-indent: 42px;
+}
+
+.menu > ul > li > a:hover{
+	background-color: #333333;
+	line-height: 37px;
+	font-family: Roboto;
+	color: #ffffff;
+	font-size: 14px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 900;
+	line-height: 36px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	font-family: Roboto;
+	text-indent: 42px;
+}
+
+#main_menu{
+	background-color: #333333;
+	line-height: 68px;
+	width: 200px;
+	height: 55px;
+	font-family: Roboto;
+	color: #ffffff;
+	font-size: 14px; /* Приближение из-за подстановки шрифтов */
+	font-weight: 700;
+	/*line-height: 32px; /* Приближение из-за подстановки шрифтов */
+	text-align: left;
+	text-indent: 42px;
+}

@@ -1,0 +1,41 @@
+<form method="post" action="/user/create_note/" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-default">Создать заметку</button>
+</form>
+<table>
+    <tr>
+        <td>
+            <form  method="post" action="">
+                {% csrf_token %}
+                <p>Сортировать по:</p>
+                <div>
+                    <input type="radio" id="sort_date" name="sort" value="Date">
+                    <label for="sort_date">дате</label>
+                    <input type="radio" id="sort_category" name="sort" value="Category">
+                    <label for="sort_category">категории</label>
+                    <input type="radio" id="sort_favorites" name="sort" value="Favorites">
+                    <label for="sort_favorites">избранным</label>
+                </div>
+                <button type="submit" class="btn btn-default">сортировать</button>
+            </form>
+        </td>
+        <td>
+            <form  method="post" action="">
+                {% csrf_token %}
+                <p>Фильтровать по:</p>
+                <div>
+                    <!--<p><input type="radio" id="filter_date" name="filter" value="Date">
+                        <label for="sort_date">дате</label>
+                        <input type="date" name="calendar"></p> -->
+                    <p>{{form.as_p}}</p>
+                </div>
+                <button type="submit" name="filter" class="btn btn-default" value="Category">категориям</button>
+            </form>
+            <form  method="post" action="">
+                {% csrf_token %}
+                 <button type="submit" name="filter" class="btn btn-default" value="Favorites">избранным</button>
+            </form>
+        </td>
+    </tr>
+</table>
+

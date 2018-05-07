@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    Index
+{% endblock %}
+{% block add_link %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/note.css' %}">
+{% endblock %}
+{% block content %}
+    {% include 'note_form.html' %}
+{% endblock %}

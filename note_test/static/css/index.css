@@ -1,0 +1,39 @@
+.my_card{
+    background-color: #f8f8f8;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.my_photo {
+   float: left;
+}
+.inf_about_me {
+    float: left;
+    margin-left: 20px;
+}
+
+.inf_about_me > table > tbody > tr > td {
+    vertical-align: top;
+}
+
+.note{
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.note:hover{
+	opacity: 0.5;
+}
+
+.note > .about_note > a{
+    display: block;
+    margin: 0 auto;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+}
+
+.pagination {
+    text-align: center
+}

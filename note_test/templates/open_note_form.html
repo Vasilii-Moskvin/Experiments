@@ -1,0 +1,6 @@
+<form method="post" action="{% url 'public_note_change' unique_id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <p><button type="submit" class="btn btn-default">Change note</button></p>
+</form>
