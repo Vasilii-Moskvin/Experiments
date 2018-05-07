@@ -37,3 +37,9 @@
 .pagination {
     text-align: center
 }
+
+.create_note_btn{
+   background-color: #f8f8f8;
+   border-color: #99CCFF white;
+   border-style: solid;
+}

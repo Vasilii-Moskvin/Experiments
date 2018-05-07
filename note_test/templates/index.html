@@ -5,7 +5,9 @@
 {% endblock %}
 {% block content %}
     {% if user.is_authenticated and not user.is_anonymous %}
-        {% include 'create_note_btn_form.html' %}
+        <div class="create_note_btn">
+            {% include 'create_note_btn_form.html' %}
+        </div>
         {% include 'list_notes.html' %}
     {% endif %}
 
